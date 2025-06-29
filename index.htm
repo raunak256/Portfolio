@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raunak Singh Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #000021;
+      color: white;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .display-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .width-50 {
+      flex: 1 1 48%;
+    }
+    .width-33 {
+      flex: 1 1 30%;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    .resume-btn {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .service-list {
+      background: #2a2a3d;
+      padding: 20px;
+      border-left: 5px solid #ffbf35;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .service-list:hover {
+      transform: scale(1.03);
+    }
+    .service-list i {
+      font-size: 30px;
+      color: #ffbf35;
+    }
+    .contact input,
+    .contact textarea {
+      background: #1e1e2f;
+      color: white;
+      border: 1px solid #ffbf35;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .contact button {
+      background: #ffbf35;
+      color: black;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+    }
+    .social-media-icons {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+    .social-media-icons a {
+      color: #ccc;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .social-media-icons a:hover {
+      color: #ffbf35;
+    }
+    .main-section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .main-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .about-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .about-info table {
+      color: #ccc;
+    }
+    .banner-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .banner-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      border: 4px solid #ffbf35;
+    }
+    .skill {
+      margin-bottom: 20px;
+    }
+    .skill span {
+      display: block;
+      height: 10px;
+      background: #ffbf35;
+      border-radius: 5px;
+    }
+    .display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Optional spacing between images */
+}
+
+.width-33 {
+  width: 200px;      /* Fix width */
+  height: 150px;     /* Fix height */
+  object-fit: cover; /* Crop images without stretching */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: nice shadow */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="display-flex">
+      <div class="width-50"><h1>R@un@k $ingh</h1></div>
+      <nav class="width-50">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Certificate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container banner-container">
+      <div class="width-50 banner-section">
+        <section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <h3><strong>Final Year BCA Student & Passionate Full Stack Developer</strong></h3>
+    <p>
+      Hello! I'm Raunak Singh, a final-year BCA student from Kanpur with a deep passion for full stack web development. I specialize in building responsive, user-friendly web applications using technologies like HTML, CSS, JavaScript, React.js, Node.js, and MongoDB.
+    </p>
+    <p>
+      I love turning complex problems into simple, beautiful, and intuitive solutions. I'm constantly learning new technologies and improving my skills to stay ahead in the tech world.
+    </p>
+    <p>
+      My goal is to contribute to meaningful projects, grow as a developer, and build software that positively impacts people’s lives.
+    </p>
+  </div>
+</section>
+
+        <a href="./23071002475_RaunakSingh.pdf" download="Raunak_Singh_Resume">
+          <button class="resume-btn">Download Resume</button>
+        </a>
+      </div>
+      <div class="width-50 banner-image">
+        <img src="./photo.jpg" alt="Raunak Singh Photo">
+      </div>
+    </div>
+
+    <section id="about" class="main-section">
+      <h2>Profile Section</h2>
+      <p>I am a student developer passionate about building projects using the latest web technologies, contributing to open-source, and continuous learning.</p>
+      <div class="about-info">
+        <table cellspacing="10" cellpadding="10">
+          <tr><th>Name:</th><td>RAUNAK SINGH</td></tr>
+          <tr><th>Email:</th><td>raunakagent@gmail.com</td></tr>
+          <tr><th>Birthday:</th><td>25/12/2006</td></tr>
+          <tr><th>Study:</th><td>PSIT College of Higher Education Kanpur</td></tr>
+        </table>
+        <table cellspacing="10" cellpadding="10">
+          <tr><th>Phone:</th><td>+91 9984820719</td></tr>
+          <tr><th>City:</th><td>Kanpur</td></tr>
+          <tr><th>Freelancer:</th><td>Available</td></tr>
+          <tr><th>Website:</th>
+            <td><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/raunak-singh-09a73b289" target="_blank">LinkedIn</a></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="services" class="main-section">
+      <h2>My Services</h2>
+      <div class="display-flex">
+        <div class="service-list width-50">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Frontend & backend full website development</p>
+        </div>
+        <div class="service-list width-50">
+          <i class="fas fa-pencil-ruler"></i>
+          <h3>Web Design</h3>
+          <p>Creative & responsive UI/UX designs</p>
+        </div>
+        <div class="service-list width-50">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Frontend Developer</h3>
+          <p>HTML, CSS, JavaScript based designs</p>
+        </div>
+        <div class="service-list width-50">
+          <i class="fas fa-server"></i>
+          <h3>Backend Developer</h3>
+          <p>Node.js, Express, MongoDB applications</p>
+        </div>
+        <div class="service-list width-50">
+          <i class="fas fa-camera"></i>
+          <h3>Photography</h3>
+          <p>Mobile and digital photography</p>
+        </div>
+        <div class="service-list width-50">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>App Development</h3>
+          <p>Mobile app UI design & prototyping</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="main-section">
+      <h2>My Skills</h2>
+      
+      <div class="display-flex">
+        <div class="width-50">
+          <div class="skill"><b>HTML</b><span style="width:95%"></span></div>
+          <div class="skill"><b>CSS</b><span style="width:91%"></span></div>
+          <div class="skill"><b>JavaScript</b><span style="width:85%"></span></div>
+        </div>
+        <div class="width-50">
+          <div class="skill"><b>C++</b><span style="width:85%"></span></div>
+          <div class="skill"><b>Python</b><span style="width:85%"></span></div>
+          <div class="skill"><b>Node.js & Express</b><span style="width:80%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="main-section">
+      <h2>My Certificates</h2>
+
+      <div class="display-flex">
+        <img src="./css.jpg" alt="Project 1" class="width-33">
+        <img src="./bootstrap.jpg" alt="Project 2" class="width-33">
+        <img src="./javascript.jpg" alt="Project 3" class="width-33">
+        <img src="./python.jpg" alt="Project 4" class="width-33">
+        <img src="./react.jpg" alt="Project 5" class="width-33">
+        <img src="./sql.jpg" alt="Project 6" class="width-33">
+      </div>
+    </section>
+
+    <section id="contact" class="main-section">
+      <h2>Get In Touch</h2>
+
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/profile.php?id=100028980199667&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/raunak-singh-09a73b289"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.github.com/raunak256"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/raunaksingh_256/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://x.com/RAUNAKSING48570?t=CBwTiNrsn1SmqbrXsNfeGA&s=09"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      <form class="contact">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Mobile No" required />
+        <textarea placeholder="Address" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.main-section').forEach(section => {
+      observer.observe(section);
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
